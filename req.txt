@@ -1,0 +1,1 @@
+select u.prenom,u.nom,z.nom,b.nomBatiment,l.typeLocalisation,nomLocalisation,nomObjet from user u,zone z,batiment b,localisation l, objet o where o.iduser=u.iduser and u.iduser=3 and o.idzone=l.idzone and o.idbatiment=l.idbatiment and o.idlocalisation=l.idlocalisation and l.idzone=b.idzone and l.idbatiment=b.idbatiment and b.idzone=z.idzone;
